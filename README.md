@@ -1,17 +1,17 @@
 # XMRig
 
-[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/network)
+[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/qqice233/xmrig/releases)
+[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/qqice233/xmrig/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig.svg)](https://github.com/qqice233/xmrig/releases)
+[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/qqice233/xmrig/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/qqice233/xmrig/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/qqice233/xmrig/network)
 
 XMRig is a high performance Monero (XMR) CPU miner, with official support for Windows.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
-* This is the **CPU-mining** version, there is also a [NVIDIA GPU version](https://github.com/xmrig/xmrig-nvidia) and [AMD GPU version]( https://github.com/xmrig/xmrig-amd).
-* [Roadmap](https://github.com/xmrig/xmrig/issues/106) for next releases.
+* This is the **CPU-mining** version, there is also a [NVIDIA GPU version](https://github.com/qqice233/xmrig-nvidia) and [AMD GPU version]( https://github.com/qqice233/xmrig-amd).
+* [Roadmap](https://github.com/qqice233/xmrig/issues/106) for next releases.
 
 <img src="http://i.imgur.com/Ymumes5.png" width="670" >
 
@@ -20,7 +20,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Download](#download)
 * [Usage](#usage)
 * [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/xmrig/xmrig/wiki/Build)
+* [Build](https://github.com/qqice233/xmrig/wiki/Build)
 * [Common Issues](#common-issues)
 * [Other information](#other-information)
 * [Donations](#donations)
@@ -36,14 +36,14 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * keepalived support.
 * Command line options compatible with cpuminer.
 * CryptoNight-Lite support for AEON.
-* Smart automatic [CPU configuration](https://github.com/xmrig/xmrig/wiki/Threads).
+* Smart automatic [CPU configuration](https://github.com/qqice233/xmrig/wiki/Threads).
 * Nicehash support
 * It's open source software.
 
 ## Download
-* Binary releases: https://github.com/xmrig/xmrig/releases
-* Git tree: https://github.com/xmrig/xmrig.git
-  * Clone with `git clone https://github.com/xmrig/xmrig.git` :hammer: [Build instructions](https://github.com/xmrig/xmrig/wiki/Build).
+* Binary releases: https://github.com/qqice233/xmrig/releases
+* Git tree: https://github.com/qqice233/xmrig.git
+  * Clone with `git clone https://github.com/qqice233/xmrig.git` :hammer: [Build instructions](https://github.com/qqice233/xmrig/wiki/Build).
 
 ## Usage
 Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
@@ -93,12 +93,12 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
   -V, --version            output version information and exit
 ```
 
-Also you can use configuration via config file, default name **config.json**. Some options available only via config file: [`autosave`](https://github.com/xmrig/xmrig/issues/767), [`hw-aes`](https://github.com/xmrig/xmrig/issues/563). `watch` option currently not implemented in miners only in proxy.
+Also you can use configuration via config file, default name **config.json**. Some options available only via config file: [`autosave`](https://github.com/qqice233/xmrig/issues/767), [`hw-aes`](https://github.com/qqice233/xmrig/issues/563). `watch` option currently not implemented in miners only in proxy.
 
 ## Algorithm variations
 
 - `av` option used for automatic and simple threads mode (when you specify only threads count).
-- For [advanced threads mode](https://github.com/xmrig/xmrig/issues/563) each thread configured individually and `av` option not used.
+- For [advanced threads mode](https://github.com/qqice233/xmrig/issues/563) each thread configured individually and `av` option not used.
 
 | av | Hashes per round | Hardware AES |
 |----|------------------|--------------|

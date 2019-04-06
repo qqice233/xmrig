@@ -382,7 +382,7 @@ bool xmrig::Client::parseJob(const rapidjson::Value &params, int *code)
         return true;
     }
 
-    if (m_jobs == 0) { // https://github.com/xmrig/xmrig/issues/459
+    if (m_jobs == 0) { // https://github.com/qqice233/xmrig/issues/459
         return false;
     }
 
